@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../select.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Best Books!</h1>
+    </header>
+    <main>
+        <form action="/add" method="POST">
+            <input class="input" type="text" name="title" placeholder="title" value="<%= book.title %>">
+            <input class="input" type="text" name="author" placeholder="author" value="<%= book.authors %>">
+            <input class="input" type="text" name="isbn" placeholder="isbn" value="<%= book.ISBN %>">
+            <input class="input" type="text" name="image" placeholder="image" value="<%= book.image %>">
+            <textarea class="des" type="text" name="description" placeholder="description"><%= book.description %></textarea>
+            <input class="input" type="text" name="bookshelf" placeholder="bookshelf">
+            <button>Add to DataBase</button>
+        </form>
+    </main>
+</body>
+
+</html>

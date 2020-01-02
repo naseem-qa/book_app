@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px solid gray;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(75, 70, 70);
+    text-align: center;
+}
+
+main {
+    background-color: gray;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.each-book {
+    margin: 15px;
+    border: white solid 5px;
+    background-color: rgb(172, 175, 175);
+    border-radius: 8px;
+}
+
+img {
+    border: palegoldenrod solid 3px;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
+}
+
+button {
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    margin-left: 10px;
+    /* margin-right: 55px; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.description {
+    text-align: justify;
+    margin: 9px;
+    margin: 10px;
+}
+
+#col{
+    margin-right: 30px;
+}
+
+main{
+    background-color: gray;
+
+}
+#Update{
+display: flex;
+justify-content: start;
+}

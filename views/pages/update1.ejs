@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../update1.css"/>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Best Books!</h1>
+    </header>
+    <main>
+    <form action="/update/<%= book.id %>" method="post">
+        <input type="hidden" name="_method" value="put">
+
+        <input class="input" type="text" name="title" value="<%- book.title %>">
+        <input class="input" type="text" name="authors" placeholder="author" value="<%- book.authors %>">
+        <input class="input" type="hidden" name="isbn" value="<%- book.ISBN %>">
+        <input class="input" type="hidden" name="image" value="<%-  book.image %>">
+        <input  type="text" class="des" name="description" value="<%- book.description %>">
+        <input class="input" type="text" name="bookshelf"  placeholder="bookshelf" value="<%= book.bookshelf %>">
+        <button id="submit" type="submit"> Update Details </button>
+    </form>
+</main>
+</body>
+</html>
