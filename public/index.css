@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px solid gray;
+}
+
+main {
+    background-color: gray;
+}
+
+.title{
+    color: white;
+    text-shadow: rgba(10, 10, 10, 0.5) 2px 2px ;
+    font-size: x-large;
+    padding: 5px;
+}
+button {
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#showForm {
+    
+        border: white solid 5px;
+        background-color: rgb(172, 175, 175);
+        border-radius: 8px;
+        margin-top: 15px;
+    
+    }
+
+    #dd {
+        margin-right: 30px;
+    }

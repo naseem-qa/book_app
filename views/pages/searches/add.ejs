@@ -8,33 +8,21 @@
 </head>
 
 <body>
-    <header>
-        <h1>Best Books!</h1>
-    </header>
     <main>
-    <ul id="col">
-        <% searchResults.forEach(book => { %>
-        <li class="each-book">
-            <div><img src=<%= book.image %>></div>
-            <div class="author"><%= book.authors%></div>
-            <div class="title"><%= book.title %></div>
-            <div class="description"><%= book.description%></div>
-            <div class="isbn"><%= book.ISBN%></div>
-            <div class="bookshelf"><%= book.bookshelf %></div>
-        </li>
-        <form action="/updatebook/<%= book.id %>" method="post">
-            <input type="hidden" name="title" value="<%- book.title %>">
-            <input type="hidden" name="authors" value="<%- book.authors %>">
-            <input type="hidden" name="isbn" value="<%- book.ISBN %>">
-            <input type="hidden" name="image" value="<%-  book.image %>">
-            <input type="hidden" name="bookshelf" value="<%= book.bookshelf %>">
-            <input type="hidden" name="description" value="<%- book.description %>">
-            <button id="Update" type="submit">Update</button>
+        <form action="/add" method="POST">
+            <input class="input" type="text" name="title" placeholder="title" value="<%= book.title %>">
+            <input class="input" type="text" name="authors" placeholder="author" value="<%= book.authors %>">
+            <input class="input" type="text" name="ISBN" placeholder="isbn" value="<%= book.ISBN %>">
+            <input class="input" type="text" name="image" placeholder="image" value="<%= book.image %>">
+            <textarea class="des" type="text" name="description"
+                placeholder="description"><%= book.description %></textarea>
+            <input class="input" type="text" name="bookshelf" placeholder="bookshelf">
         </form>
-    
+        <button>save update</button>
 
-        <% }) %>
-    </ul>
+
+            <% }) %>
+        </ul>
     </main>
 </body>
 

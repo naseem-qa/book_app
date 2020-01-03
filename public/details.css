@@ -5,33 +5,20 @@ body {
     border: 3px solid gray;
 }
 
+main {
+    background-color: gray;
+    height: auto;
+}
+
 h1 {
     background-color: black;
     color: white;
     padding: 5px;
 }
 
-h2 {
-    color: white;
-    background-color: rgb(75, 70, 70);
-    text-align: center;
-}
-
-main {
-    background-color: gray;
-    height: auto;
-}
-
 ul {
     list-style-type: none;
     text-align: center;
-}
-
-.each-book {
-    margin: 15px;
-    border: white solid 5px;
-    background-color: rgb(172, 175, 175);
-    border-radius: 8px;
 }
 
 img {
@@ -43,6 +30,42 @@ img {
 img:hover {
     box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
 }
+.description {
+    text-align: justify;
+    margin: 9px;
+    background-color: rgb(194, 189, 189);
+}
+.each-book 
+{
+    border: white solid 5px;
+    background-color: rgb(172, 175, 175);
+    border-radius: 8px;
+    margin-top: 15px;
+
+}
+
+.title{
+    color: white;
+    text-shadow: rgba(10, 10, 10, 0.5) 2px 2px ;
+    font-size: x-large;
+    padding: 5px;
+}
+
+#showForm {
+    margin-right: 30px;
+}
+
+.isbn{
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: x-large;
+    color: rgb(78, 71, 71);
+
+}
+.isbn1{
+    font-size: x-large;
+    color: rgb(78, 71, 71);
+}
 
 button {
     color: white;
@@ -51,7 +74,7 @@ button {
     color: white;
     padding: 20px;
     width: 100px;
-    margin-left: 10px;
+    /* margin-left: 40px; */
     /* margin-right: 55px; */
     margin-top: 10px;
     margin-bottom: 20px;
@@ -59,20 +82,3 @@ button {
     border-radius: 5px;
 }
 
-.description {
-    text-align: justify;
-    margin: 9px;
-    margin: 10px;
-    background-color: rgb(194, 189, 189);
-
-}
-
-#col{
-    margin-right: 30px;
-}
-
-
-#Update{
-display: flex;
-justify-content: start;
-}
