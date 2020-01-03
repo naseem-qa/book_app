@@ -13,12 +13,12 @@
 
         <input class="input" type="text" name="title" value="<%- book.title %>">
         <input class="input" type="text" name="authors" placeholder="author" value="<%- book.authors %>">
-        <input class="input" type="hidden" name="isbn" value="<%- book.ISBN %>">
+        <input class="input" type="hidden" name="isbn" value="<%- book.isbn %>">
         <input class="input" type="hidden" name="image" value="<%-  book.image %>">
         <input  type="text" class="des" name="description" value="<%- book.description %>">
         <input class="input" type="text" name="bookshelf"  placeholder="bookshelf" value="<%= book.bookshelf %>">
         <div>
-            <input type="submit"  value="Update Book"></input>
+            <input class="submit" type="submit"  value="Update Book"></input>
 
         </div>
     </form>
