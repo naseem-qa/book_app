@@ -45,18 +45,19 @@ app.post('/add', savedbook);
 app.post('/select', selectedBook);
 app.get('/books/:books_id', oneBook)
 app.post('/update', getUpdateForm);
-app.put('/update/:books_id',updateSaved)
-app.delete('/delete/:books_id',deleteBook)
+app.put('/update/:books_id', updateSaved)
+app.delete('/delete/:books_id', deleteBook)
 
 function oneBook(req, res) {
     let SQL = 'SELECT * FROM booksjo WHERE id=$1';
     let values = [req.params.books_id];
+    //req=>params{books_id=1}
     // console.log(req);
     client.query(SQL, values)
         .then(resu => {
             res.render('pages/books/details', { book: resu.rows })
             // console.log(resu.rows );
-            
+
 
         })
 }
@@ -94,17 +95,17 @@ function selectedBook(req, res) {
     let { title, authors, image, isbn, description } = req.body;
     res.render('pages/searches/select', { book: req.body })
     // console.log(req.body);
-    
+
 }
 
 function savedbook(req, res) {
     let { title, authors, image, isbn, description, bookshelf } = req.body;
     // console.log( req.body);
-    
+
     let SQL = 'INSERT INTO booksjo(title, authors, image, isbn, description,bookshelf) VALUES ($1, $2, $3, $4, $5,$6);'
     let values = [title, authors, image, isbn, description, bookshelf];
     // console.log(values);
-    
+
     client.query(SQL, values)
         .then(() => {
             res.redirect('/')
@@ -122,26 +123,26 @@ function getBooks(req, res) {
 }
 
 function updateSaved(req, res) {
-    let { title, authors, image, isbn, description, bookshelf} = req.body;//get the data from the form
+    let { title, authors, image, isbn, description, bookshelf } = req.body;//get the data from the form
     let SQL = `UPDATE booksjo SET title=$1, authors=$2, image=$3, isbn=$4, description=$5, bookshelf=$6 WHERE id=$7 `
-    let values = [title, authors, image,isbn, description,bookshelf, req.params.books_id];
+    let values = [title, authors, image, isbn, description, bookshelf, req.params.books_id];
     //req.params.book_id : get the params(id) from the url//
     client.query(SQL, values)
-        .then(()=> {res.redirect('/')})
+        .then(() => { res.redirect('/') })
 }
 
 function getUpdateForm(req, res) {
     res.render('pages/books/edit', { book: req.body });
     // console.log(req.body);
-    
+
 }
 
-function deleteBook(req, res){
+function deleteBook(req, res) {
     let SQL = `DELETE FROM booksjo WHERE id=$1;`;
     let values = [req.params.books_id];
     client.query(SQL, values)
-      .then(res.redirect('/'))
-    }
+        .then(res.redirect('/'))
+}
 
 client.connect()
     .then(
