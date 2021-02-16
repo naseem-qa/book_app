@@ -1,0 +1,29 @@
+{
+  "name": "re-book_app",
+  "version": "0.0.1",
+  "description": "doing the project agin ",
+  "main": "srever.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naseem-qa/re-book_app.git"
+  },
+  "author": "Naseem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naseem-qa/re-book_app/issues"
+  },
+  "homepage": "https://github.com/naseem-qa/re-book_app#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "method-override": "^3.0.0",
+    "pg": "^7.15.1",
+    "superagent": "^5.1.3"
+  }
+}

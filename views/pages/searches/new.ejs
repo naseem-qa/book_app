@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style1.css" />
+</head>
+
+<body>
+    <main>
+        <h2>
+            Search by Title or Author
+        </h2>
+        <form action="/searches" method="POST">
+            <label>
+                <input id="searchbox" type="text" placeholder='search by keyword' name="keyword">
+            </label>
+            <label class="container">
+                <input type="radio" value="author" name="search">
+                <span>
+                    Author
+                </span>
+            </label>
+            <label class="container">
+                <input type="radio" value="title" name="search">
+                <span>
+                    Title
+                </span>
+            </label>
+            <input id="submit" type="submit" value="Search the Goolge Books API">
+        </form>
+    </main>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body {
+    background-color: black;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px solid gray;
+}
+
+main {
+    background-color: gray;
+    height: auto;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+img {
+    border: palegoldenrod solid 3px;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
+}
+.description {
+    text-align: justify;
+    margin: 9px;
+    background-color: rgb(194, 189, 189);
+}
+.each-book 
+{
+    border: white solid 5px;
+    background-color: rgb(172, 175, 175);
+    border-radius: 8px;
+    margin-top: 15px;
+
+}
+
+.title{
+    color: white;
+    text-shadow: rgba(10, 10, 10, 0.5) 2px 2px ;
+    font-size: x-large;
+    padding: 5px;
+}
+
+#showForm {
+    margin-right: 30px;
+}
+
+.isbn{
+    padding: 10px;
+    padding-bottom: 0;
+    font-size: x-large;
+    color: rgb(78, 71, 71);
+
+}
+.isbn1{
+    font-size: x-large;
+    color: rgb(78, 71, 71);
+}
+
+#Update {
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    margin-left: 10px;
+    /* margin-right: 300px; */
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+    border-radius: 5px;
+}
+#delete{
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100px;
+    margin-left: 200px;
+    margin-right: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#fl{
+    display: flex;
+    align-items: baseline;
+}
+
+
+
+
+
+
+
+

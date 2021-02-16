@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../show.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <h2>Search Results</h2>
+        <div id="showForm">
+            <ul>
+                <% searchResults.forEach(book => { %>
+                <li class="each-book" data-id="<%= book.id %>">
+                    <div><img src=<%= book.image %>></div>
+                    <div class="title"><%= book.title %></div>
+                    <div class="author"><%= book.authors%></div>
+                    <div class="isbn"><%= book.ISBN%></div>
+                    <div class="description"><%= book.description%></div>
+                </li>
+                <div>
+                    <form action="/select" method="post">
+                        <input type="hidden" name="title" value="<%- book.title %>">
+                        <input type="hidden" name="authors" value="<%- book.authors %>">
+                        <input type="hidden" name="isbn" value="<%- book.isbn%>">
+                        <input type="hidden" name="image" value="<%-  book.image %>">
+                        <input type="hidden" name="description" value="<%- book.description %>">
+                        <button type="submit">Select This Book</button>
+                    </form>
+                </div>
+                <% }) %>
+            </ul>
+        </div>
+    </main>
+    <script src="server.js"></script>
+</body>
+
+</html>

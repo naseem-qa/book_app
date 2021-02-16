@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px solid gray;
+}
+
+main {
+    background-color: gray;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+h2 {
+    color: white;
+    background-color: rgb(75, 70, 70);
+    text-align: center;
+    padding: 10px;
+    margin: 0em;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.description {
+    text-align: justify;
+    margin: 9px;
+    background-color: rgb(194, 189, 189);
+
+}
+
+#showForm {
+    margin-right: 30px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+img {
+    border: palegoldenrod solid 3px;
+    border-radius: 8px;
+    margin-top: 7px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(10, 10, 10, 0.5);
+}
+
+.each-book {
+    margin: 15px;
+    border: white solid 5px;
+    background-color: rgb(172, 175, 175);
+    border-radius: 8px;
+}
+
+
+.title{
+    color: white;
+    text-shadow: rgba(10, 10, 10, 0.5) 2px 2px ;
+    font-size: x-large;
+    padding: 5px;
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    width: 500px;
+    margin: 0px auto;
+    border: 3px solid gray;
+}
+
+main {
+    background-color: gray;
+    height: auto;
+}
+
+.input {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+ .submit{
+    color: white;
+    background-color: black;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 400px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+/* #submit */
+
+.des {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: 30px;
+    padding: 20px;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    border-radius: 10px;
+    overflow: scroll;
+    
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
